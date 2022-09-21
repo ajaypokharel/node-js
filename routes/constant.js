@@ -1,8 +1,4 @@
-
-const express = require('express');
-const router = express.Router();
-
-students = [
+[
     {
       "ID": "1",
       "Name": "Senpai",
@@ -201,25 +197,3 @@ students = [
       "ScheduleAction": "Stand_Stand_Socialize_Sit_Socialize_Sit_Clean_Shoes_Stand",
       "Info": ""
     }]
-
-router.get('/', (req, res) => {   
-    res.send(JSON.stringify(students))
-});
-
-router.get(`/:id`, (req, res) => {
-    result = []
-    students.map((student) => {
-        if (student.ID === String(req.params.id)) {
-            result.push(student)
-    }
-})
-
-    if (result.length == 0) {
-        res.send("INVALID STUDENT ID")
-    } else {
-        res.send(result)
-    }
-
-});
-
-module.exports = router;
