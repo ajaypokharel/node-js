@@ -1,10 +1,10 @@
 {
   "name": "nodejs-basics",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
-    "devStart": "nodemon server.js"
+    "devStart": "nodemon server.js",
+    "start": "node server.js"
   },
   "keywords": [],
   "author": "",
@@ -15,5 +15,14 @@
   },
   "devDependencies": {
     "nodemon": "^2.0.20"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bpeddapudi/nodejs-basics-routes.git"
+  },
+  "bugs": {
+    "url": "https://github.com/bpeddapudi/nodejs-basics-routes/issues"
+  },
+  "homepage": "https://github.com/bpeddapudi/nodejs-basics-routes#readme",
+  "description": ""
 }
